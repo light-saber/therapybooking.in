@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vipanchika Perumbeti | Psychologist & Online Therapist, Bangalore</title>
+
+  <!-- SEO Core -->
+  <meta name="description" content="Online therapy with Vipanchika Perumbeti, Psychologist in Bangalore. Evidence-based counselling for anxiety, depression, stress & relationships. Book a session from ₹1,000.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Vipanchika Perumbeti">
+  <link rel="canonical" href="https://therapybooking.in/">
+
+  <!-- Geo / Local SEO -->
+  <meta name="geo.region" content="IN-KA">
+  <meta name="geo.placename" content="Bangalore">
+  <meta name="geo.position" content="12.9716;77.5946">
+  <meta name="ICBM" content="12.9716, 77.5946">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://therapybooking.in/">
+  <meta property="og:title" content="Vipanchika Perumbeti | Psychologist & Online Therapist, Bangalore">
+  <meta property="og:description" content="Compassionate, evidence-based online therapy for anxiety, depression, stress & relationships. Book your session with Vipanchika Perumbeti from ₹1,000.">
+  <meta property="og:image" content="https://therapybooking.in/hero_illustration.jpg">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:site_name" content="Vipanchika Perumbeti - Online Therapist Bangalore">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vipanchika Perumbeti | Psychologist & Online Therapist, Bangalore">
+  <meta name="twitter:description" content="Compassionate online therapy for anxiety, depression, stress & relationships. Book a session from ₹1,000.">
+  <meta name="twitter:image" content="https://therapybooking.in/hero_illustration.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --forest: #253D35;
+      --sage: #6B9080;
+      --mint: #A4C3B2;
+      --cream: #F5EFE6;
+      --ivory: #FAF8F3;
+      --terracotta: #C4704F;
+      --rose: #D4907A;
+      --text: #252520;
+      --text-mid: #5A5A52;
+      --text-light: #8A8A7A;
+      --white: #FFFFFF;
+      --border: rgba(37,61,53,0.1);
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body: 'DM Sans', sans-serif;
+      --shadow-sm: 0 2px 16px rgba(37,61,53,0.06);
+      --shadow-md: 0 8px 40px rgba(37,61,53,0.12);
+      --ease: 0.35s cubic-bezier(0.4,0,0.2,1);
+    }
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:var(--font-body); background:var(--ivory); color:var(--text); overflow-x:hidden; line-height:1.6; }
+    a { text-decoration:none; color:inherit; }
+    img { max-width:100%; display:block; }
+
+    /* Animations */
+    @keyframes fadeInUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes float { 0%,100% { transform:translateY(0) rotate(0deg); } 50% { transform:translateY(-10px) rotate(1.5deg); } }
+    .reveal { opacity:0; transform:translateY(36px); transition:opacity 0.75s ease, transform 0.75s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+
+    /* Layout */
+    .container { max-width:1160px; margin:0 auto; padding:0 2rem; }
+    .section { padding:6rem 0; }
+    .section-alt { background:var(--cream); }
+
+    /* Labels */
+    .label {
+      display:inline-flex; align-items:center; gap:0.5rem;
+      font-size:0.72rem; font-weight:500; letter-spacing:0.16em;
+      text-transform:uppercase; color:var(--terracotta); margin-bottom:0.85rem;
+    }
+    .label::before { content:''; width:20px; height:1px; background:currentColor; display:block; }
+
+    /* Buttons */
+    .btn {
+      display:inline-flex; align-items:center; gap:0.45rem;
+      padding:0.8rem 1.9rem; border-radius:50px; font-family:var(--font-body);
+      font-size:0.875rem; font-weight:500; cursor:pointer; border:none;
+      transition:all var(--ease);
+    }
+    .btn-dark { background:var(--forest); color:var(--white); }
+    .btn-dark:hover { background:var(--terracotta); transform:translateY(-2px); box-shadow:0 8px 24px rgba(196,112,79,0.3); }
+    .btn-outline { background:transparent; color:var(--forest); border:1.5px solid var(--forest); }
+    .btn-outline:hover { background:var(--forest); color:var(--white); transform:translateY(-2px); }
+    .btn-white { background:var(--white); color:var(--terracotta); }
+    .btn-white:hover { background:var(--forest); color:var(--white); transform:translateY(-2px); box-shadow:0 10px 28px rgba(0,0,0,0.18); }
+
+    /* ─── NAV ─── */
+    .nav {
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      padding:1.5rem 2rem;
+      display:flex; align-items:center; justify-content:space-between;
+      transition:all var(--ease);
+    }
+    .nav.scrolled {
+      background:rgba(250,248,243,0.95); backdrop-filter:blur(14px);
+      padding:1rem 2rem; box-shadow:0 1px 20px rgba(37,61,53,0.08);
+    }
+    .nav-logo { font-family:var(--font-display); font-size:1.35rem; font-weight:700; color:var(--forest); }
+    .nav-logo em { font-style:italic; font-weight:400; color:var(--terracotta); }
+    .nav-links { display:flex; align-items:center; gap:2.25rem; list-style:none; }
+    .nav-links a { font-size:0.82rem; font-weight:400; color:var(--text-mid); letter-spacing:0.06em; text-transform:uppercase; transition:color var(--ease); }
+    .nav-links a:hover { color:var(--forest); }
+    .nav-cta { background:var(--terracotta) !important; color:var(--white) !important; padding:0.55rem 1.35rem; border-radius:50px; text-transform:none !important; letter-spacing:0 !important; font-weight:500 !important; transition:background var(--ease) !important; }
+    .nav-cta:hover { background:var(--forest) !important; }
+    .hamburger { display:none; flex-direction:column; gap:5px; cursor:pointer; }
+    .hamburger span { display:block; width:24px; height:2px; background:var(--forest); border-radius:2px; transition:all var(--ease); }
+
+    /* Mobile drawer */
+    .drawer {
+      display:none; position:fixed; inset:0; background:var(--ivory);
+      z-index:200; flex-direction:column; align-items:center; justify-content:center; gap:2rem;
+    }
+    .drawer.open { display:flex; }
+    .drawer a { font-family:var(--font-display); font-size:2.2rem; font-weight:600; color:var(--forest); transition:color var(--ease); }
+    .drawer a:hover { color:var(--terracotta); }
+    .drawer-close { position:absolute; top:1.5rem; right:2rem; font-size:1.5rem; cursor:pointer; color:var(--forest); background:none; border:none; }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height:100vh; background:var(--cream); position:relative; overflow:hidden;
+      display:flex; align-items:center;
+    }
+    .hero-bg {
+      position:absolute; inset:0;
+      background:
+        radial-gradient(circle at 78% 18%, rgba(196,112,79,0.09) 0%, transparent 48%),
+        radial-gradient(circle at 18% 82%, rgba(107,144,128,0.13) 0%, transparent 50%);
+    }
+    .hero-grid {
+      display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;
+      padding-top:7rem; padding-bottom:4rem; position:relative;
+    }
+    .hero-label {
+      display:inline-flex; align-items:center; gap:0.5rem;
+      font-size:0.72rem; font-weight:500; color:var(--sage);
+      letter-spacing:0.16em; text-transform:uppercase; margin-bottom:1.5rem;
+      animation:fadeInUp 0.8s ease both;
+    }
+    .hero-label::before { content:''; width:22px; height:1px; background:var(--sage); display:block; }
+    .hero h1 {
+      font-family:var(--font-display); font-size:clamp(3rem,5vw,5rem);
+      font-weight:700; color:var(--forest); line-height:1.1;
+      margin-bottom:1.4rem; animation:fadeInUp 0.8s 0.12s ease both;
+    }
+    .hero h1 em { font-style:italic; color:var(--terracotta); }
+    .hero-desc {
+      font-size:1.05rem; color:var(--text-mid); line-height:1.85;
+      max-width:440px; font-weight:300; margin-bottom:2.5rem;
+      animation:fadeInUp 0.8s 0.24s ease both;
+    }
+    .hero-actions { display:flex; gap:1rem; flex-wrap:wrap; animation:fadeInUp 0.8s 0.36s ease both; }
+    .hero-stats {
+      display:flex; gap:2.5rem; margin-top:3rem;
+      animation:fadeInUp 0.8s 0.5s ease both; flex-wrap:wrap;
+    }
+    .stat-num { font-family:var(--font-display); font-size:2rem; font-weight:700; color:var(--forest); line-height:1; display:block; }
+    .stat-lbl { font-size:0.72rem; color:var(--text-light); letter-spacing:0.05em; margin-top:0.2rem; display:block; }
+
+    /* Hero visual */
+    .hero-visual { position:relative; display:flex; justify-content:center; animation:fadeInUp 0.9s 0.2s ease both; }
+    .hero-photo-wrap { position:relative; width:400px; height:520px; }
+    .hero-photo {
+      width:100%; height:100%;
+      background:linear-gradient(148deg, var(--mint) 0%, var(--sage) 100%);
+      border-radius:180px 180px 20px 20px; overflow:hidden;
+      display:flex; align-items:flex-end; justify-content:center;
+    }
+    .hero-photo-inner {
+      width:70%; height:88%; background:rgba(37,61,53,0.14);
+      border-radius:100px 100px 0 0;
+    }
+    .hero-photo-text {
+      position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+      font-family:var(--font-display); font-style:italic; color:rgba(255,255,255,0.5);
+      font-size:0.95rem; text-align:center; pointer-events:none;
+    }
+    /* Floating tags */
+    .ftag {
+      position:absolute; background:var(--white); border-radius:14px;
+      padding:0.8rem 1.1rem; box-shadow:var(--shadow-md);
+      display:flex; align-items:center; gap:0.65rem;
+    }
+    .ftag-icon { width:34px; height:34px; border-radius:9px; display:flex; align-items:center; justify-content:center; font-size:1rem; }
+    .ftag-title { font-size:0.72rem; font-weight:500; color:var(--text); display:block; }
+    .ftag-sub { font-size:0.62rem; color:var(--text-light); display:block; }
+    .ftag-1 { bottom:50px; left:-16px; animation:float 4s ease-in-out infinite; }
+    .ftag-1 .ftag-icon { background:#E8F5E9; }
+    .ftag-2 { top:80px; right:-16px; animation:float 4s 1.2s ease-in-out infinite; }
+    .ftag-2 .ftag-icon { background:#FFF3E0; }
+
+    /* Botanical SVGs */
+    .leaf { position:absolute; pointer-events:none; }
+    .leaf-1 { top:-30px; right:-50px; animation:float 6s ease-in-out infinite; }
+    .leaf-2 { bottom:40px; left:-55px; animation:float 5s 2s ease-in-out infinite; }
+
+    /* ─── TRUST BAR ─── */
+    .trust-bar { background:var(--forest); padding:1.4rem 0; }
+    .trust-inner { display:flex; align-items:center; justify-content:center; gap:3.5rem; flex-wrap:wrap; }
+    .trust-item { display:flex; align-items:center; gap:0.65rem; color:rgba(255,255,255,0.78); font-size:0.82rem; font-weight:300; }
+
+    /* ─── ABOUT ─── */
+    .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:center; }
+    .about-img-wrap { position:relative; }
+    .about-img {
+      width:100%; aspect-ratio:3/4; border-radius:8px 110px 8px 110px;
+      background:linear-gradient(155deg, var(--cream) 0%, var(--mint) 100%);
+      display:flex; align-items:center; justify-content:center; overflow:hidden;
+    }
+    .about-img-label { font-family:var(--font-display); font-style:italic; color:var(--sage); opacity:0.55; font-size:0.95rem; }
+    .about-badge {
+      position:absolute; bottom:-20px; right:-20px;
+      background:var(--terracotta); color:var(--white);
+      padding:1.25rem 1.75rem; border-radius:12px;
+      font-family:var(--font-display);
+    }
+    .badge-num { font-size:2.4rem; font-weight:700; line-height:1; display:block; }
+    .badge-txt { font-size:0.82rem; opacity:0.88; display:block; }
+    .about-body { padding-left:0; }
+    .about-quote {
+      font-family:var(--font-display); font-size:1.5rem; font-style:italic;
+      color:var(--forest); line-height:1.45; border-left:3px solid var(--terracotta);
+      padding-left:1.4rem; margin:1.75rem 0;
+    }
+    .about-p { font-size:0.95rem; color:var(--text-mid); line-height:1.9; font-weight:300; margin-bottom:1.25rem; }
+    .creds { display:flex; flex-direction:column; gap:0.65rem; margin-top:1.75rem; }
+    .cred { display:flex; align-items:center; gap:0.75rem; font-size:0.85rem; color:var(--text-mid); }
+    .cred-dot { width:7px; height:7px; border-radius:50%; background:var(--terracotta); flex-shrink:0; }
+
+    /* ─── SERVICES ─── */
+    .services-hd { text-align:center; max-width:580px; margin:0 auto 3.5rem; }
+    .services-hd .section-sub { margin:0 auto; }
+    .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; }
+    .svc-card {
+      background:var(--white); border-radius:14px; padding:2.25rem 1.85rem;
+      border:1px solid var(--border); transition:all var(--ease); position:relative; overflow:hidden;
+    }
+    .svc-card::after {
+      content:''; position:absolute; bottom:0; left:0; right:0; height:3px;
+      background:var(--terracotta); transform:scaleX(0); transition:transform var(--ease);
+    }
+    .svc-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-md); }
+    .svc-card:hover::after { transform:scaleX(1); }
+    .svc-img { width:calc(100% + 3.7rem); margin:-2.25rem -1.85rem 1.25rem; height:180px; object-fit:cover; border-radius:14px 14px 0 0; display:block; }
+    .svc-icon { font-size:1.9rem; margin-bottom:1.1rem; display:block; }
+    .svc-title { font-family:var(--font-display); font-size:1.35rem; font-weight:600; color:var(--forest); margin-bottom:0.6rem; }
+    .svc-desc { font-size:0.875rem; color:var(--text-mid); line-height:1.8; font-weight:300; }
+    .svc-price { margin-top:1.4rem; display:flex; align-items:baseline; gap:0.2rem; }
+    .price-amt { font-family:var(--font-display); font-size:1.55rem; font-weight:700; color:var(--forest); }
+    .price-unit { font-size:0.75rem; color:var(--text-light); }
+
+    /* ─── BOOKING ─── */
+    .booking-grid { display:grid; grid-template-columns:1fr 1.4fr; gap:5rem; align-items:start; }
+    .steps { display:flex; flex-direction:column; gap:1.85rem; margin-top:2.5rem; }
+    .step { display:flex; gap:1.1rem; align-items:flex-start; }
+    .step-num {
+      width:42px; height:42px; border-radius:50%; background:var(--forest);
+      color:var(--white); display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-display); font-size:1.05rem; font-weight:700; flex-shrink:0;
+    }
+    .step h4 { font-family:var(--font-display); font-size:1.1rem; color:var(--forest); margin-bottom:0.2rem; }
+    .step p { font-size:0.85rem; color:var(--text-mid); line-height:1.75; font-weight:300; }
+    .calendly-note {
+      background:rgba(37,61,53,0.06); border-radius:12px;
+      padding:1.1rem 1.4rem; margin-top:2rem;
+      display:flex; gap:0.85rem; align-items:flex-start;
+    }
+    .calendly-note p { font-size:0.82rem; color:var(--text-mid); line-height:1.75; }
+    .calendly-note strong { color:var(--forest); font-weight:500; }
+    .cal-widget-wrap {
+      background:var(--white); border-radius:14px;
+      box-shadow:var(--shadow-sm); border:1px solid var(--border);
+      min-height:580px;
+    }
+    .cal-placeholder { text-align:center; padding:3rem; }
+    .cal-placeholder-icon { font-size:2.8rem; margin-bottom:1rem; }
+    .cal-placeholder h3 { font-family:var(--font-display); font-size:1.35rem; color:var(--forest); margin-bottom:0.5rem; }
+    .cal-placeholder p { font-size:0.82rem; color:var(--text-light); margin-bottom:1.5rem; line-height:1.7; }
+
+    /* ─── PAYMENT ─── */
+    .payment-section { background:var(--forest); }
+    .payment-hd { text-align:center; margin-bottom:3.5rem; }
+    .payment-hd .label { color:var(--mint); }
+    .payment-hd h2 { font-family:var(--font-display); font-size:clamp(2rem,3.5vw,3rem); color:var(--white); margin-bottom:0.75rem; }
+    .payment-hd p { font-size:1rem; color:rgba(255,255,255,0.65); font-weight:300; max-width:520px; margin:0 auto; line-height:1.8; }
+    .payment-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; margin-bottom:2.5rem; }
+    .pay-card {
+      background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.12);
+      border-radius:14px; padding:1.85rem; transition:all var(--ease);
+    }
+    .pay-card:hover { background:rgba(255,255,255,0.12); transform:translateY(-4px); }
+    .pay-icon { font-size:1.9rem; margin-bottom:0.85rem; }
+    .pay-title { font-family:var(--font-display); font-size:1.25rem; color:var(--white); margin-bottom:0.5rem; }
+    .pay-badge {
+      display:inline-block; background:var(--terracotta); color:var(--white);
+      font-size:0.62rem; padding:0.18rem 0.55rem; border-radius:20px;
+      letter-spacing:0.08em; text-transform:uppercase; font-weight:500; margin-bottom:0.85rem;
+    }
+    .pay-desc { font-size:0.85rem; color:rgba(255,255,255,0.6); line-height:1.8; font-weight:300; }
+    .pay-notice {
+      background:rgba(196,112,79,0.18); border:1px solid rgba(196,112,79,0.3);
+      border-radius:12px; padding:1.15rem 1.4rem;
+      display:flex; gap:0.85rem; align-items:flex-start;
+      max-width:680px; margin:0 auto;
+    }
+    .pay-notice p { font-size:0.82rem; color:rgba(255,255,255,0.78); line-height:1.75; }
+    .pay-notice strong { color:var(--white); }
+
+    /* ─── TESTIMONIALS ─── */
+    .testi-hd { text-align:center; margin-bottom:3.5rem; }
+    .testi-hd h2 { font-family:var(--font-display); font-size:clamp(2rem,3.5vw,3rem); margin-bottom:0.75rem; }
+    .testi-hd p { font-size:0.95rem; color:var(--text-mid); font-weight:300; max-width:500px; margin:0 auto; }
+    .testi-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.4rem; }
+    .testi-card {
+      background:var(--white); border-radius:14px; padding:1.85rem;
+      border:1px solid var(--border); transition:all var(--ease);
+    }
+    .testi-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
+    .testi-mark { font-family:var(--font-display); font-size:3.5rem; color:var(--terracotta); opacity:0.2; line-height:1; }
+    .testi-text { font-size:0.875rem; color:var(--text-mid); line-height:1.85; font-weight:300; font-style:italic; margin-bottom:1.4rem; }
+    .testi-author { display:flex; align-items:center; gap:0.7rem; }
+    .testi-avatar {
+      width:38px; height:38px; border-radius:50%; background:var(--mint);
+      display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-display); font-weight:700; color:var(--forest); font-size:0.95rem; flex-shrink:0;
+    }
+    .testi-name { font-size:0.82rem; font-weight:500; color:var(--text); display:block; }
+    .testi-role { font-size:0.72rem; color:var(--text-light); display:block; }
+    .testi-stars { color:#F59E0B; font-size:0.75rem; letter-spacing:2px; margin-left:auto; }
+
+    /* ─── CTA BAND ─── */
+    .cta-band {
+      background:linear-gradient(130deg, var(--terracotta) 0%, #A85B3C 100%);
+      padding:5rem 0; text-align:center; position:relative; overflow:hidden;
+    }
+    .cta-band::before {
+      content:''; position:absolute; inset:0;
+      background:radial-gradient(circle at 28% 50%, rgba(255,255,255,0.07) 0%, transparent 55%);
+    }
+    .cta-band h2 {
+      font-family:var(--font-display); font-size:clamp(2rem,4vw,3.25rem);
+      color:var(--white); margin-bottom:0.85rem; position:relative;
+    }
+    .cta-band p { font-size:1rem; color:rgba(255,255,255,0.78); font-weight:300; max-width:460px; margin:0 auto 2.25rem; position:relative; }
+
+    /* ─── FAQ ─── */
+    .faq-grid { display:grid; grid-template-columns:1fr 1.6fr; gap:5.5rem; align-items:start; }
+    .faq-list { display:flex; flex-direction:column; gap:0.85rem; }
+    .faq-item { background:var(--white); border-radius:12px; border:1px solid var(--border); overflow:hidden; }
+    .faq-q {
+      display:flex; align-items:center; justify-content:space-between;
+      padding:1.2rem 1.4rem; cursor:pointer; transition:background var(--ease);
+    }
+    .faq-q:hover { background:rgba(37,61,53,0.03); }
+    .faq-q h4 { font-family:var(--font-display); font-size:0.98rem; font-weight:600; color:var(--forest); flex:1; padding-right:1rem; }
+    .faq-icon {
+      width:24px; height:24px; border-radius:50%; background:var(--mint);
+      display:flex; align-items:center; justify-content:center;
+      font-size:0.8rem; color:var(--forest); transition:all var(--ease); flex-shrink:0;
+    }
+    .faq-item.open .faq-icon { background:var(--terracotta); color:var(--white); transform:rotate(45deg); }
+    .faq-ans { max-height:0; overflow:hidden; transition:max-height 0.4s ease; }
+    .faq-item.open .faq-ans { max-height:260px; }
+    .faq-ans p { padding:0 1.4rem 1.2rem; font-size:0.875rem; color:var(--text-mid); line-height:1.85; font-weight:300; }
+
+    /* ─── FOOTER ─── */
+    .footer { background:#1B2C24; color:rgba(255,255,255,0.7); padding:4rem 0 2rem; }
+    .footer-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr; gap:2.5rem; margin-bottom:2.5rem; padding-bottom:2.5rem; border-bottom:1px solid rgba(255,255,255,0.08); }
+    .footer-logo { font-family:var(--font-display); font-size:1.3rem; font-weight:700; color:var(--white); }
+    .footer-logo em { font-style:italic; font-weight:400; color:var(--terracotta); }
+    .footer-brand p { font-size:0.85rem; line-height:1.8; max-width:270px; margin-top:0.85rem; font-weight:300; }
+    .footer-col h5 { font-family:var(--font-display); font-size:0.98rem; font-weight:600; color:var(--white); margin-bottom:1.1rem; }
+    .footer-links { display:flex; flex-direction:column; gap:0.55rem; list-style:none; }
+    .footer-links a { font-size:0.85rem; color:rgba(255,255,255,0.58); transition:color var(--ease); font-weight:300; }
+    .footer-links a:hover { color:var(--terracotta); }
+    .fc-item { display:flex; align-items:flex-start; gap:0.65rem; font-size:0.85rem; margin-bottom:0.65rem; font-weight:300; }
+    .footer-bottom { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+    .footer-bottom p { font-size:0.75rem; color:rgba(255,255,255,0.38); }
+    .socials { display:flex; gap:0.6rem; }
+    .soc {
+      width:34px; height:34px; border-radius:50%; border:1px solid rgba(255,255,255,0.15);
+      display:flex; align-items:center; justify-content:center;
+      font-size:0.82rem; transition:all var(--ease); color:rgba(255,255,255,0.6);
+    }
+    .soc:hover { background:var(--terracotta); border-color:var(--terracotta); color:var(--white); }
+
+    /* ─── RESPONSIVE ─── */
+    .section-title { font-family:var(--font-display); font-size:clamp(2.1rem,3.8vw,3.25rem); font-weight:700; line-height:1.15; margin-bottom:1.25rem; }
+    .section-sub { font-size:1rem; color:var(--text-mid); line-height:1.85; font-weight:300; max-width:540px; }
+
+    @media(max-width:1024px) {
+      .hero-grid { grid-template-columns:1fr; text-align:center; }
+      .hero-visual { display:none; }
+      .hero-actions, .hero-stats { justify-content:center; }
+      .hero-desc { margin:0 auto 2.5rem; }
+      .about-grid { grid-template-columns:1fr; gap:3rem; }
+      .about-body { padding-left:0; }
+      .about-img { height:360px; }
+      .services-grid { grid-template-columns:repeat(2,1fr); }
+      .booking-grid { grid-template-columns:1fr; }
+      .payment-grid { grid-template-columns:1fr; }
+      .testi-grid { grid-template-columns:1fr; }
+      .faq-grid { grid-template-columns:1fr; gap:3rem; }
+      .footer-grid { grid-template-columns:1fr 1fr; }
+    }
+    @media(max-width:768px) {
+      .nav-links { display:none; }
+      .hamburger { display:flex; }
+      .services-grid { grid-template-columns:1fr; }
+      .footer-grid { grid-template-columns:1fr; }
+      .hero-stats { gap:1.5rem; }
+    }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["MedicalBusiness", "LocalBusiness"],
+        "@id": "https://therapybooking.in/#business",
+        "name": "Vipanchika Perumbeti - Online Psychologist & Therapist",
+        "description": "Compassionate, evidence-based online therapy for anxiety, depression, stress and relationship issues. Serving clients across India.",
+        "url": "https://therapybooking.in",
+        "email": "vipanchika.therapy@gmail.com",
+        "image": "https://therapybooking.in/hero_illustration.jpg",
+        "priceRange": "₹₹",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bangalore",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 12.9716,
+          "longitude": 77.5946
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          }
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "India"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Therapy Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Individual Counselling",
+                "description": "One-on-one online therapy sessions addressing personal challenges, emotional difficulties, anxiety, and depression."
+              },
+              "price": "1000",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Couple Counselling",
+                "description": "Online therapy sessions to improve communication, resolve conflicts, and strengthen relationships."
+              },
+              "price": "2200",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Stress and Anxiety Therapy",
+                "description": "Practical coping strategies and techniques to manage stress and anxiety."
+              },
+              "price": "1000",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Depression Support",
+                "description": "Compassionate support for managing low mood, persistent sadness, and depression."
+              },
+              "price": "1000",
+              "priceCurrency": "INR"
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Personal Growth Therapy",
+                "description": "Therapy for building self-awareness, setting boundaries, and living a more intentional, fulfilling life."
+              },
+              "price": "1000",
+              "priceCurrency": "INR"
+            }
+          ]
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://therapybooking.in/#therapist",
+        "name": "Vipanchika Perumbeti",
+        "jobTitle": "Psychologist",
+        "worksFor": { "@id": "https://therapybooking.in/#business" },
+        "knowsLanguage": ["English", "Hindi", "Telugu", "Kannada"],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Bangalore",
+          "addressRegion": "Karnataka",
+          "addressCountry": "IN"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://therapybooking.in/#website",
+        "url": "https://therapybooking.in",
+        "name": "Vipanchika Perumbeti - Online Psychologist & Therapist Bangalore",
+        "description": "Compassionate online therapy with Vipanchika Perumbeti, Psychologist in Bangalore.",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does online therapy work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sessions are conducted via Google Meet or Zoom in a secure, private video call. You need a smartphone or laptop, a stable internet connection, and a quiet private space. The meeting link is included in your booking confirmation email."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is online therapy as effective as in-person therapy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Research consistently shows that online therapy is equally effective as in-person therapy for most conditions — including anxiety, depression, stress, and relationship issues. Many clients find attending from home actually makes it easier to open up and engage consistently."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does therapy take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This varies by your goals and situation. Some clients see meaningful progress in 6–10 sessions for a specific issue; others benefit from longer-term support. We discuss this openly during the first session and revisit it regularly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is everything I share in therapy kept confidential?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Confidentiality is the foundation of therapy. Everything shared in sessions is strictly private. The only exceptions are situations involving imminent risk of harm to you or others — a standard legal and ethical requirement for all mental health professionals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I need to cancel or reschedule my therapy session?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can reschedule or cancel up to 24 hours before your session at no charge via the link in your booking confirmation email. Cancellations within 24 hours may attract a 50% fee."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What languages are therapy sessions available in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sessions are available in English, Hindi, Telugu, and Kannada. Many clients prefer a natural mix of languages — that is completely fine and encouraged."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- DRAWER (mobile) -->
+<div class="drawer" id="drawer">
+  <button class="drawer-close" id="drawerClose">✕</button>
+  <a href="#about" onclick="closeDrawer()">About</a>
+  <a href="#services" onclick="closeDrawer()">Services</a>
+  <a href="#booking" onclick="closeDrawer()">Book a Session</a>
+  <a href="#faq" onclick="closeDrawer()">FAQ</a>
+  <a href="#contact" onclick="closeDrawer()">Contact</a>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-logo">Vipanchika <em>Perumbeti</em></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#booking">Book a Session</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#booking" class="nav-cta">Book Now</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-label">Psychologist · Bangalore, India</span>
+        <h1>Healing begins<br>with <em>being heard.</em></h1>
+        <p class="hero-desc">
+          Compassionate, evidence-based online therapy to help you navigate anxiety, depression, relationship struggles, and life transitions — from the comfort of your home.
+        </p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn btn-dark">Book a Session →</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="hero-stats">
+          <div><span class="stat-num">45<span style="font-size:1rem;font-weight:400"> min</span></span><span class="stat-lbl">Session Length</span></div>
+          <div><span class="stat-num">₹1,000</span><span class="stat-lbl">Per Session</span></div>
+          <div><span class="stat-num">100%</span><span class="stat-lbl">Online &amp; Confidential</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-photo-wrap">
+          <!-- Leaf 1 -->
+          <svg class="leaf leaf-1" width="110" height="110" viewBox="0 0 110 110" fill="none">
+            <path d="M55 8 C18 28, 8 72, 55 102 C102 72, 92 28, 55 8Z" fill="#6B9080" opacity="0.28"/>
+            <line x1="55" y1="8" x2="55" y2="102" stroke="#6B9080" stroke-width="1.5" opacity="0.35"/>
+            <path d="M38 42 C47 52, 63 52, 72 42" stroke="#6B9080" stroke-width="1" opacity="0.3" fill="none"/>
+            <path d="M34 62 C44 72, 66 72, 76 62" stroke="#6B9080" stroke-width="1" opacity="0.25" fill="none"/>
+          </svg>
+          <!-- Leaf 2 -->
+          <svg class="leaf leaf-2" width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <path d="M40 5 C10 22, 5 58, 40 75 C75 58, 70 22, 40 5Z" fill="#C4704F" opacity="0.22"/>
+            <line x1="40" y1="5" x2="40" y2="75" stroke="#C4704F" stroke-width="1.5" opacity="0.28"/>
+          </svg>
+          <div class="hero-photo" style="padding:0;overflow:hidden;background:none;">
+            <img src="hero_illustration.jpg" alt="Vipanchika Perumbeti - online therapy session illustration, psychologist Bangalore" style="width:100%;height:100%;object-fit:cover;object-position:center top;">
+            <svg style="display:none" width="100%" height="100%" viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg">
+              <!-- Soft overlay circles for depth -->
+              <circle cx="80" cy="90" r="45" fill="rgba(255,255,255,0.07)"/>
+              <circle cx="320" cy="140" r="65" fill="rgba(255,255,255,0.05)"/>
+              <!-- COUCH back -->
+              <rect x="28" y="318" width="344" height="72" rx="18" fill="rgba(37,61,53,0.2)"/>
+              <!-- Couch armrests -->
+              <rect x="28" y="328" width="32" height="102" rx="12" fill="rgba(37,61,53,0.22)"/>
+              <rect x="340" y="328" width="32" height="102" rx="12" fill="rgba(37,61,53,0.22)"/>
+              <!-- Couch seat cushions -->
+              <rect x="38" y="385" width="324" height="78" rx="16" fill="rgba(37,61,53,0.18)"/>
+              <rect x="46" y="372" width="148" height="48" rx="12" fill="rgba(37,61,53,0.16)"/>
+              <rect x="206" y="372" width="148" height="48" rx="12" fill="rgba(37,61,53,0.16)"/>
+              <!-- LEFT FIGURE (client) -->
+              <circle cx="132" cy="242" r="33" fill="#F5EFE6"/>
+              <path d="M99 234 Q102 205 132 201 Q162 205 165 234 Q160 217 132 214 Q104 217 99 234Z" fill="#7A5040" opacity="0.5"/>
+              <!-- long hair sides -->
+              <path d="M99 232 Q93 260 98 278" stroke="#7A5040" stroke-width="9" stroke-linecap="round" fill="none" opacity="0.38"/>
+              <path d="M165 232 Q171 258 166 278" stroke="#7A5040" stroke-width="9" stroke-linecap="round" fill="none" opacity="0.38"/>
+              <ellipse cx="124" cy="240" rx="3" ry="3.5" fill="#3D2B1F" opacity="0.65"/>
+              <ellipse cx="140" cy="240" rx="3" ry="3.5" fill="#3D2B1F" opacity="0.65"/>
+              <path d="M125 253 Q132 259 139 253" stroke="#3D2B1F" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.45"/>
+              <!-- client body -->
+              <path d="M97 315 Q94 283 114 263 Q132 250 150 263 Q170 283 167 315" fill="#F5EFE6"/>
+              <!-- arms resting -->
+              <path d="M97 302 Q112 322 132 326 Q152 322 167 302" stroke="#F5EFE6" stroke-width="15" fill="none" stroke-linecap="round"/>
+              <!-- RIGHT FIGURE (therapist) -->
+              <circle cx="272" cy="246" r="29" fill="#F5EFE6" opacity="0.92"/>
+              <path d="M243 239 Q246 213 272 210 Q298 213 301 239 Q296 222 272 219 Q248 222 243 239Z" fill="#4A3020" opacity="0.42"/>
+              <ellipse cx="265" cy="244" rx="2.5" ry="3" fill="#3D2B1F" opacity="0.62"/>
+              <ellipse cx="279" cy="244" rx="2.5" ry="3" fill="#3D2B1F" opacity="0.62"/>
+              <path d="M266 256 Q272 261 278 256" stroke="#3D2B1F" stroke-width="1.4" fill="none" stroke-linecap="round" opacity="0.5"/>
+              <!-- therapist body -->
+              <path d="M243 315 Q240 284 259 265 Q272 253 285 265 Q304 284 301 315" fill="#F5EFE6" opacity="0.9"/>
+              <!-- notepad -->
+              <rect x="238" y="292" width="46" height="56" rx="4" fill="rgba(164,195,178,0.72)"/>
+              <line x1="246" y1="306" x2="276" y2="306" stroke="rgba(37,61,53,0.28)" stroke-width="1.4"/>
+              <line x1="246" y1="315" x2="276" y2="315" stroke="rgba(37,61,53,0.28)" stroke-width="1.4"/>
+              <line x1="246" y1="324" x2="270" y2="324" stroke="rgba(37,61,53,0.28)" stroke-width="1.4"/>
+              <line x1="275" y1="289" x2="275" y2="305" stroke="#C4704F" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+              <!-- Empathy connection arc -->
+              <path d="M173 268 Q202 244 240 266" stroke="rgba(196,112,79,0.32)" stroke-width="2" fill="none" stroke-dasharray="6,5"/>
+              <!-- Small potted plant (side table) -->
+              <rect x="338" y="358" width="38" height="7" rx="3.5" fill="rgba(37,61,53,0.28)"/>
+              <rect x="353" y="365" width="8" height="22" rx="4" fill="rgba(37,61,53,0.22)"/>
+              <path d="M357 358 Q357 374 357 358 C345 336 330 322 340 308 C347 318 350 338 357 358Z" fill="#6B9080" opacity="0.75"/>
+              <path d="M357 358 C369 334 382 320 374 308 C368 318 364 338 357 358Z" fill="#6B9080" opacity="0.65"/>
+              <path d="M357 358 C352 330 352 312 357 305 C362 312 362 330 357 358Z" fill="#A4C3B2" opacity="0.55"/>
+              <path d="M346 344 Q346 358 357 360 Q368 358 368 344 Q368 337 357 335 Q346 337 346 344Z" fill="#C4704F" opacity="0.52"/>
+              <!-- Botanical leaf top-left -->
+              <path d="M52 78 C20 98, 14 140, 58 154 C84 134, 77 98, 52 78Z" fill="rgba(37,61,53,0.22)"/>
+              <line x1="52" y1="78" x2="58" y2="154" stroke="rgba(37,61,53,0.26)" stroke-width="1.2"/>
+              <path d="M58 154 C40 142, 28 126, 36 112" stroke="rgba(37,61,53,0.18)" stroke-width="1" fill="none"/>
+              <path d="M58 154 C74 144, 80 128, 72 114" stroke="rgba(37,61,53,0.18)" stroke-width="1" fill="none"/>
+              <!-- Botanical leaf top-right -->
+              <path d="M358 58 C392 78, 396 118, 352 130 C328 112, 336 76, 358 58Z" fill="rgba(196,112,79,0.2)"/>
+              <line x1="358" y1="58" x2="352" y2="130" stroke="rgba(196,112,79,0.24)" stroke-width="1.2"/>
+              <!-- Floating soft circles -->
+              <circle cx="72" cy="205" r="5" fill="rgba(255,255,255,0.17)"/>
+              <circle cx="338" cy="218" r="4" fill="rgba(255,255,255,0.14)"/>
+              <circle cx="195" cy="470" r="4.5" fill="rgba(255,255,255,0.12)"/>
+            </svg>
+          </div>
+          <div class="ftag ftag-1">
+            <div class="ftag-icon">🟢</div>
+            <div><span class="ftag-title">Currently Available</span><span class="ftag-sub">Online sessions open</span></div>
+          </div>
+          <div class="ftag ftag-2">
+            <div class="ftag-icon">📅</div>
+            <div><span class="ftag-title">Easy Booking</span><span class="ftag-sub">via Cal.com</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-inner">
+      <div class="trust-item"><span>🎓</span> Psychologist, Bangalore</div>
+      <div class="trust-item"><span>🔒</span> 100% Confidential Sessions</div>
+      <div class="trust-item"><span>🌐</span> Online via Google Meet / Zoom</div>
+      <div class="trust-item"><span>🌱</span> Client-Centered Approach</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-grid" style="grid-template-columns:1fr;max-width:720px;margin:0 auto;">
+      <div class="about-body reveal">
+        <span class="label">About Me</span>
+        <h2 class="section-title">A safe space to <em style="font-style:italic;color:var(--terracotta)">explore, heal &amp; grow</em></h2>
+        <blockquote class="about-quote">"A safe and non-judgmental space — where your journey to wellness begins."</blockquote>
+        <p class="about-p">
+          I'm Vipanchika Perumbeti, a psychologist based in Bangalore offering compassionate and confidential online counselling. My practice is built on a client-centered approach — meaning every session is shaped around you, your pace, and your goals.
+        </p>
+        <p class="about-p">
+          I believe in empowering you with the tools and insights needed to navigate life's challenges, foster personal growth, and enhance your overall well-being. Whether you're dealing with anxiety, stress, relationship difficulties, or simply seeking a space to be heard — I'm here.
+        </p>
+        <div class="creds">
+          <div class="cred"><div class="cred-dot"></div>Psychologist, Bangalore</div>
+          <div class="cred"><div class="cred-dot"></div>Specialises in anxiety, depression, stress &amp; relationships</div>
+          <div class="cred"><div class="cred-dot"></div>Client-centered, evidence-based approach</div>
+          <div class="cred"><div class="cred-dot"></div>Online sessions via Google Meet / Zoom</div>
+          <div class="cred"><div class="cred-dot"></div>Languages: English, Hindi, Telugu, Kannada</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="services-hd reveal">
+      <span class="label">What I Offer</span>
+      <h2 class="section-title">Therapy for every stage of life</h2>
+      <p class="section-sub" style="margin:0 auto;text-align:center;">Whether you're managing anxiety, navigating relationships, or simply need a space to breathe — I'm here.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card reveal">
+        <img src="svc_individual.jpg" alt="Individual online counselling session - one-on-one therapy Bangalore" class="svc-img">
+        <h3 class="svc-title">Individual Counselling</h3>
+        <p class="svc-desc">One-on-one sessions addressing personal challenges and emotional difficulties. A confidential space to explore your thoughts and feelings at your own pace.</p>
+        <div class="svc-price"><span class="price-amt">₹1,000</span><span class="price-unit">/ 1-hour session</span></div>
+      </div>
+      <div class="svc-card reveal" style="transition-delay:0.1s">
+        <img src="svc_couple.jpg" alt="Online couple counselling - relationship therapy and communication support" class="svc-img">
+        <h3 class="svc-title">Couple Counselling</h3>
+        <p class="svc-desc">Support for improving communication, resolving conflicts, and strengthening your relationship. Open to couples at any stage of their journey together.</p>
+        <div class="svc-price"><span class="price-amt">₹2,200</span><span class="price-unit">/ 1-hour session</span></div>
+      </div>
+      <div class="svc-card reveal" style="transition-delay:0.2s">
+        <img src="svc_stress.jpg" alt="Stress and anxiety therapy - online counselling for anxiety management" class="svc-img">
+        <h3 class="svc-title">Stress &amp; Anxiety</h3>
+        <p class="svc-desc">Practical coping strategies and techniques to manage stress, anxiety, and the pressures of everyday life — so you can feel more in control.</p>
+        <div class="svc-price"><span class="price-amt">₹1,000</span><span class="price-unit">/ 1-hour session</span></div>
+      </div>
+      <div class="svc-card reveal" style="transition-delay:0.3s">
+        <img src="svc_growth.jpg" alt="Personal growth therapy - online counselling for self-awareness and fulfilment" class="svc-img">
+        <h3 class="svc-title">Personal Growth</h3>
+        <p class="svc-desc">You don't need to be in crisis to seek support. Therapy can help you build self-awareness, set boundaries, and live a more intentional, fulfilling life.</p>
+        <div class="svc-price"><span class="price-amt">₹1,000</span><span class="price-unit">/ 1-hour session</span></div>
+      </div>
+      <div class="svc-card reveal" style="transition-delay:0.4s">
+        <img src="svc_depression.jpg" alt="Depression support therapy - online counselling for low mood and persistent sadness" class="svc-img">
+        <h3 class="svc-title">Depression Support</h3>
+        <p class="svc-desc">Compassionate support for managing low mood, persistent sadness, and depression — helping you reconnect with meaning and motivation in your daily life.</p>
+        <div class="svc-price"><span class="price-amt">₹1,000</span><span class="price-unit">/ 1-hour session</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="section section-alt" id="booking">
+  <div class="container">
+    <div class="booking-grid">
+      <div>
+        <span class="label reveal">Book a Session</span>
+        <h2 class="section-title reveal" style="max-width:360px;transition-delay:0.1s">Simple. <em style="font-style:italic;color:var(--terracotta)">Personal.</em> Supportive.</h2>
+        <p class="section-sub reveal" style="transition-delay:0.18s">Booking takes under 2 minutes. Your session is personally confirmed by me once payment is complete.</p>
+        <div class="steps">
+          <div class="step reveal" style="transition-delay:0.26s">
+            <div class="step-num">1</div>
+            <div><h4>Pick a date &amp; time</h4><p>Choose a session type, select an available slot, and share your phone number in the booking form.</p></div>
+          </div>
+          <div class="step reveal" style="transition-delay:0.34s">
+            <div class="step-num">2</div>
+            <div><h4>Receive a payment message</h4><p>I'll personally send you a message with the payment details — usually within a few hours of your booking.</p></div>
+          </div>
+          <div class="step reveal" style="transition-delay:0.42s">
+            <div class="step-num">3</div>
+            <div><h4>Complete payment</h4><p>Pay via UPI, card, or bank transfer. Once I receive confirmation, your session is officially booked.</p></div>
+          </div>
+          <div class="step reveal" style="transition-delay:0.5s">
+            <div class="step-num">4</div>
+            <div><h4>Session confirmed</h4><p>You'll receive a Google Meet link for your session. That's it — see you there.</p></div>
+          </div>
+        </div>
+        <div class="calendly-note reveal" style="transition-delay:0.58s">
+          <span style="font-size:1.2rem">📅</span>
+          <p><strong>Powered by Cal.com</strong> — a secure, open scheduling platform. No account needed to book. You can reschedule or cancel up to 24 hours before your appointment.</p>
+        </div>
+      </div>
+
+      <div class="cal-widget-wrap reveal" style="transition-delay:0.18s">
+        <!--
+          ═══════════════════════════════════════════
+          CAL.COM SETUP INSTRUCTIONS:
+          1. Sign up free at cal.com
+          2. Create event types (Individual Counselling, Couple Counselling)
+          3. Go to Workflows → add UPI payment instructions to confirmation email
+          4. Replace YOUR_USERNAME below with your cal.com username
+          ═══════════════════════════════════════════
+        -->
+        <div id="cal-booking" style="width:100%;min-height:600px;"></div>
+        <script type="text/javascript">
+          (function (C, A, L) {
+            let p = function (a, ar) { a.q.push(ar); };
+            let d = C.document;
+            C.Cal = C.Cal || function () {
+              let cal = C.Cal; let ar = arguments;
+              if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; }
+              if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["-a", namespace, ar]);} else p(cal, ar); return; }
+              p(cal, ar);
+            };
+          })(window, "https://app.cal.com/embed/embed.js", "init");
+          Cal("init", { origin: "https://app.cal.com" });
+          Cal("inline", {
+            elementOrSelector: "#cal-booking",
+            calLink: "vipanchika-perumbeti-lq0zif",
+          });
+          Cal("ui", {
+            styles: { branding: { brandColor: "#253D35" } },
+            hideEventTypeDetails: false,
+          });
+        </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <h2>Ready to take the first step?</h2>
+    <p>Take the first step towards a more balanced and fulfilling life — book your session today.</p>
+    <a href="#booking" class="btn btn-white">Book a Session →</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section-alt" id="faq">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="reveal">
+        <span class="label">FAQ</span>
+        <h2 class="section-title" style="max-width:300px;">Questions you might have</h2>
+        <p class="section-sub" style="margin-top:0.75rem;">Can't find your answer? Reach out directly.</p>
+        <a href="mailto:vipanchika.therapy@gmail.com" class="btn btn-outline" style="margin-top:2rem;display:inline-flex;">Email Me →</a>
+      </div>
+      <div class="faq-list reveal" style="transition-delay:0.18s">
+        <div class="faq-item">
+          <div class="faq-q"><h4>How does online therapy work?</h4><span class="faq-icon">+</span></div>
+          <div class="faq-ans"><p>Sessions are conducted via Google Meet or Zoom in a secure, private video call. You need a smartphone or laptop, a stable internet connection, and a quiet private space. The meeting link is included in your booking confirmation email.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><h4>Is online therapy as effective as in-person?</h4><span class="faq-icon">+</span></div>
+          <div class="faq-ans"><p>Research consistently shows that online therapy is equally effective as in-person therapy for most conditions — including anxiety, depression, stress, and relationship issues. Many clients find attending from home actually makes it easier to open up and engage consistently.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><h4>How long does therapy take?</h4><span class="faq-icon">+</span></div>
+          <div class="faq-ans"><p>This varies by your goals and situation. Some clients see meaningful progress in 6–10 sessions for a specific issue; others benefit from longer-term support. We'll discuss this openly during your first session and revisit it regularly as we work together.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><h4>Is everything I share kept confidential?</h4><span class="faq-icon">+</span></div>
+          <div class="faq-ans"><p>Absolutely. Confidentiality is the foundation of therapy. Everything shared in our sessions is strictly private. The only exceptions are situations involving imminent risk of harm to you or others — a standard legal and ethical requirement for all mental health professionals.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><h4>What if I need to cancel or reschedule?</h4><span class="faq-icon">+</span></div>
+          <div class="faq-ans"><p>You can reschedule or cancel up to 24 hours before your session at no charge via the link in your Calendly confirmation email. Cancellations within 24 hours may attract a 50% fee. Life happens — just communicate early and we'll work it out.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><h4>What languages do you offer sessions in?</h4><span class="faq-icon">+</span></div>
+          <div class="faq-ans"><p>I'm comfortable conducting sessions in English, Hindi, Telugu, and Kannada. Many clients prefer a natural mix of languages — that's completely fine. The goal is for you to feel at ease expressing yourself however feels most natural.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Vipanchika <em>Perumbeti</em></div>
+        <p>Psychologist offering online therapy to individuals and couples across India. Your mental health matters — and so do you.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services &amp; Fees</a></li>
+          <li><a href="#booking">Book a Session</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Specialisations</h5>
+        <ul class="footer-links">
+          <li><a href="#services">Individual Counselling</a></li>
+          <li><a href="#services">Couple Counselling</a></li>
+          <li><a href="#services">Stress &amp; Anxiety</a></li>
+          <li><a href="#services">Personal Growth</a></li>
+          <li><a href="#services">Depression Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Get in Touch</h5>
+        <div class="fc-item"><span>📧</span> vipanchika.therapy@gmail.com</div>
+        <div class="fc-item"><span>🕐</span> Mon–Sat, 9am–7pm IST</div>
+        <div class="fc-item"><span>📍</span> Bangalore, India<br><span style="opacity:0.55;font-size:0.8em;">Serving clients pan-India online</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Vipanchika Perumbeti · Psychologist, Bangalore · All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50));
+
+  // Mobile drawer
+  document.getElementById('hamburger').addEventListener('click', () => document.getElementById('drawer').classList.add('open'));
+  document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+  function closeDrawer() { document.getElementById('drawer').classList.remove('open'); }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>

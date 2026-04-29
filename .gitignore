@@ -1,0 +1,43 @@
+# Server & environment
+.env
+.env.*
+*.env
+config.php
+config.json
+secrets.*
+credentials.*
+private_key*
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+*.ppk
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Backup files
+*.bak
+*.backup
+*.orig
+
+# Node (in case added later)
+node_modules/
+npm-debug.log
+
+# PHP (in case added later)
+vendor/
