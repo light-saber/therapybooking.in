@@ -123,6 +123,12 @@
     .drawer.open { display:flex; }
     .drawer a { font-family:var(--font-display); font-size:2.2rem; font-weight:600; color:var(--forest); transition:color var(--ease); }
     .drawer a:hover { color:var(--terracotta); }
+    .drawer-book {
+      font-family:var(--font-body) !important; font-size:1rem !important; font-weight:500 !important;
+      background:var(--terracotta) !important; color:var(--white) !important;
+      padding:0.85rem 2.5rem; border-radius:50px; transition:background var(--ease) !important;
+    }
+    .drawer-book:hover { background:var(--forest) !important; color:var(--white) !important; }
     .drawer-close { position:absolute; top:1.5rem; right:2rem; font-size:1.5rem; cursor:pointer; color:var(--forest); background:none; border:none; }
 
     /* ─── HERO ─── */
@@ -357,11 +363,13 @@
     .faq-list { display:flex; flex-direction:column; gap:0.85rem; }
     .faq-item { background:var(--white); border-radius:12px; border:1px solid var(--border); overflow:hidden; }
     .faq-q {
+      width:100%; background:none; border:none; font-family:inherit;
       display:flex; align-items:center; justify-content:space-between;
       padding:1.2rem 1.4rem; cursor:pointer; transition:background var(--ease);
+      text-align:left;
     }
     .faq-q:hover { background:rgba(37,61,53,0.03); }
-    .faq-q h4 { font-family:var(--font-display); font-size:0.98rem; font-weight:600; color:var(--forest); flex:1; padding-right:1rem; }
+    .faq-ql { font-family:var(--font-display); font-size:0.98rem; font-weight:600; color:var(--forest); flex:1; padding-right:1rem; }
     .faq-icon {
       width:24px; height:24px; border-radius:50%; background:var(--mint);
       display:flex; align-items:center; justify-content:center;
@@ -434,6 +442,22 @@
       position:absolute; top:0; left:0; width:100%; height:100%;
       border:0;
     }
+    .yt-facade {
+      position:absolute; top:0; left:0; width:100%; height:100%;
+      cursor:pointer; display:block;
+    }
+    .yt-facade img {
+      position:absolute; top:0; left:0; width:100%; height:100%;
+      object-fit:cover; border-radius:16px;
+    }
+    .yt-play {
+      position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+      width:68px; height:68px; border-radius:50%; background:rgba(220,0,0,0.88);
+      color:#fff; font-size:1.4rem; border:none; cursor:pointer;
+      display:flex; align-items:center; justify-content:center;
+      transition:transform 0.25s ease, background 0.25s ease; pointer-events:none;
+    }
+    .yt-facade:hover .yt-play { transform:translate(-50%,-50%) scale(1.1); background:rgba(220,0,0,1); }
   </style>
 
   <!-- Structured Data -->
@@ -616,7 +640,7 @@
   <button class="drawer-close" id="drawerClose">✕</button>
   <a href="#about" onclick="closeDrawer()">About</a>
   <a href="#services" onclick="closeDrawer()">Services</a>
-  <a href="#booking" onclick="closeDrawer()">Book a Session</a>
+  <a href="#booking" class="drawer-book" onclick="closeDrawer()">Book a Session</a>
   <a href="#faq" onclick="closeDrawer()">FAQ</a>
   <a href="#contact" onclick="closeDrawer()">Contact</a>
 </div>
@@ -652,7 +676,7 @@
           <a href="#about" class="btn btn-outline">Learn More</a>
         </div>
         <div class="hero-stats">
-          <div><span class="stat-num">45<span style="font-size:1rem;font-weight:400"> min</span></span><span class="stat-lbl">Session Length</span></div>
+          <div><span class="stat-num">1<span style="font-size:1rem;font-weight:400"> hr</span></span><span class="stat-lbl">Session Length</span></div>
           <div><span class="stat-num">₹1,000</span><span class="stat-lbl">Per Session</span></div>
           <div><span class="stat-num">100%</span><span class="stat-lbl">Online &amp; Confidential</span></div>
         </div>
@@ -788,26 +812,6 @@
   </div>
 </section>
 
-<!-- VIDEO -->
-<section class="section video-section" id="video">
-  <div class="container">
-    <div class="video-inner">
-      <span class="label reveal">Watch &amp; Learn</span>
-      <h2 class="section-title reveal" style="transition-delay:0.08s">Hear it <em style="font-style:italic;color:var(--terracotta)">from me</em></h2>
-      <p class="section-sub reveal" style="transition-delay:0.16s">A glimpse into my approach to therapy — because finding the right therapist starts with feeling understood.</p>
-      <div class="video-wrap reveal" style="transition-delay:0.24s">
-        <iframe
-          src="https://www.youtube-nocookie.com/embed/82Eck50CQdQ?rel=0"
-          title="Vipanchika Perumbeti — Psychologist & Online Therapist, Bangalore"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-          loading="lazy">
-        </iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- SERVICES -->
 <section class="section section-alt" id="services">
   <div class="container">
@@ -846,6 +850,23 @@
         <h3 class="svc-title">Depression Support</h3>
         <p class="svc-desc">Compassionate support for managing low mood, persistent sadness, and depression — helping you reconnect with meaning and motivation in your daily life.</p>
         <div class="svc-price"><span class="price-amt">₹1,000</span><span class="price-unit">/ 1-hour session</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="section video-section" id="video">
+  <div class="container">
+    <div class="video-inner">
+      <span class="label reveal">Watch &amp; Learn</span>
+      <h2 class="section-title reveal" style="transition-delay:0.08s">Hear it <em style="font-style:italic;color:var(--terracotta)">from me</em></h2>
+      <p class="section-sub reveal" style="transition-delay:0.16s">A glimpse into my approach to therapy — because finding the right therapist starts with feeling understood.</p>
+      <div class="video-wrap reveal" style="transition-delay:0.24s">
+        <div class="yt-facade" id="ytFacade" onclick="loadYT()">
+          <img src="https://img.youtube.com/vi/82Eck50CQdQ/maxresdefault.jpg" alt="Play: Vipanchika Perumbeti — Psychologist & Online Therapist, Bangalore">
+          <button class="yt-play" aria-label="Play video" tabindex="-1">▶</button>
+        </div>
       </div>
     </div>
   </div>
@@ -943,27 +964,27 @@
       </div>
       <div class="faq-list reveal" style="transition-delay:0.18s">
         <div class="faq-item">
-          <div class="faq-q"><h4>How does online therapy work?</h4><span class="faq-icon">+</span></div>
+          <button type="button" class="faq-q"><span class="faq-ql">How does online therapy work?</span><span class="faq-icon" aria-hidden="true">+</span></button>
           <div class="faq-ans"><p>Sessions are conducted via Google Meet or Zoom in a secure, private video call. You need a smartphone or laptop, a stable internet connection, and a quiet private space. The meeting link is included in your booking confirmation email.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><h4>Is online therapy as effective as in-person?</h4><span class="faq-icon">+</span></div>
+          <button type="button" class="faq-q"><span class="faq-ql">Is online therapy as effective as in-person?</span><span class="faq-icon" aria-hidden="true">+</span></button>
           <div class="faq-ans"><p>Research consistently shows that online therapy is equally effective as in-person therapy for most conditions — including anxiety, depression, stress, and relationship issues. Many clients find attending from home actually makes it easier to open up and engage consistently.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><h4>How long does therapy take?</h4><span class="faq-icon">+</span></div>
+          <button type="button" class="faq-q"><span class="faq-ql">How long does therapy take?</span><span class="faq-icon" aria-hidden="true">+</span></button>
           <div class="faq-ans"><p>This varies by your goals and situation. Some clients see meaningful progress in 6–10 sessions for a specific issue; others benefit from longer-term support. We'll discuss this openly during your first session and revisit it regularly as we work together.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><h4>Is everything I share kept confidential?</h4><span class="faq-icon">+</span></div>
+          <button type="button" class="faq-q"><span class="faq-ql">Is everything I share kept confidential?</span><span class="faq-icon" aria-hidden="true">+</span></button>
           <div class="faq-ans"><p>Absolutely. Confidentiality is the foundation of therapy. Everything shared in our sessions is strictly private. The only exceptions are situations involving imminent risk of harm to you or others — a standard legal and ethical requirement for all mental health professionals.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><h4>What if I need to cancel or reschedule?</h4><span class="faq-icon">+</span></div>
-          <div class="faq-ans"><p>You can reschedule or cancel up to 24 hours before your session at no charge via the link in your Calendly confirmation email. Cancellations within 24 hours may attract a 50% fee. Life happens — just communicate early and we'll work it out.</p></div>
+          <button type="button" class="faq-q"><span class="faq-ql">What if I need to cancel or reschedule?</span><span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-ans"><p>You can reschedule or cancel up to 24 hours before your session at no charge via the link in your Cal.com confirmation email. Cancellations within 24 hours may attract a 50% fee. Life happens — just communicate early and we'll work it out.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q"><h4>What languages do you offer sessions in?</h4><span class="faq-icon">+</span></div>
+          <button type="button" class="faq-q"><span class="faq-ql">What languages do you offer sessions in?</span><span class="faq-icon" aria-hidden="true">+</span></button>
           <div class="faq-ans"><p>I'm comfortable conducting sessions in English, Hindi, Telugu, and Kannada. Many clients prefer a natural mix of languages — that's completely fine. The goal is for you to feel at ease expressing yourself however feels most natural.</p></div>
         </div>
       </div>
@@ -1006,7 +1027,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Vipanchika Perumbeti · Psychologist, Bangalore · All rights reserved.</p>
+      <p>© 2026 Vipanchika Perumbeti · Psychologist, Bangalore · All rights reserved.</p>
     </div>
   </div>
 </footer>
@@ -1030,12 +1051,25 @@
   // FAQ accordion
   document.querySelectorAll('.faq-q').forEach(q => {
     q.addEventListener('click', () => {
-      const item = q.parentElement;
+      const item = q.closest('.faq-item');
       const isOpen = item.classList.contains('open');
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       if (!isOpen) item.classList.add('open');
     });
   });
+
+  function loadYT() {
+    const facade = document.getElementById('ytFacade');
+    const wrap = facade.parentElement;
+    facade.remove();
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/82Eck50CQdQ?rel=0&autoplay=1';
+    iframe.title = 'Vipanchika Perumbeti — Psychologist & Online Therapist, Bangalore';
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0;';
+    wrap.appendChild(iframe);
+  }
 </script>
 
 </body>
